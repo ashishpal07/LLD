@@ -28,22 +28,37 @@
  * subclasses of duck is
  *     - while making constructor of subclasses :-
  *         - creates an instances of FlyingBehaviour, QuackBehaviour
+ *
+ * We have implemented non-concrete class subclass and flying class
+ * is depends on each other by an interface as medium
  */
 
 public class Main {
     public static void main(String[] args) {
 
         Duck d1 = new MallardDuck();
+        d1.performFly();
+        d1.performQuack();
         d1.display();
+        d1.setFlyBehaviour(new RocketPoweredFlying());
+        d1.performFly();
 
 
         Duck d2 = new RedHeadDuck();
+        d2.performFly();
+        d2.performQuack();
         d2.display();
+        d2.setQuackBehaviour(new MuteQuack());
+        d2.performQuack();
 
         Duck d3 = new RubberDuck();
+        d3.performFly();
+        d3.performQuack();
         d3.display();
 
         Duck d4 = new DecoyDuck();
+        d4.performFly();
+        d4.performQuack();
         d4.display();
 
     }

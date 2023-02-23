@@ -2,10 +2,8 @@ public class MallardDuck extends Duck {
 
     public MallardDuck () {
         System.out.println("-------MallardDuck-------");
-        QuackBehaviour quackBehaviour = new Quack();
-        quackBehaviour.quack();
-        FlyBehaviour flyBehaviour = new FlyWithWings();
-        flyBehaviour.fly();
+        quackBehaviour = new Quack();
+        flyBehaviour = new FlyWithWings();
     }
     @Override
     public void display() {

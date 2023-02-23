@@ -11,6 +11,12 @@
  * ❏ B. Runtime behavior changes are difficult.
  * ❏ E. Ducks can’t fly and quack at the same time.
  * ❏ F. Changes can unintentionally affect other ducks
+ *
+ *
+ * Uses Interface for this.
+ * This design is ok but what if you have to change in fly
+ * behaviour of all Ducks then you have to do changes in
+ * all the Duck subclasses[It can lead to bug also]
  */
 
 public class Main {

@@ -3,4 +3,10 @@ public class RedHeadDuck extends Duck {
     public void display() {
         System.out.println("look like red head duck");
     }
+
+    @Override
+    public void fly() {
+        System.out.println("RedHeadDuck is flying");
+    }
+
 }
